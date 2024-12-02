@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const orderSchema = new mongoose.Schema({
   userId: { type: String, required: true },
   items: { type: Array, required: true },
-  account: { type: Number, required: true },
+  amount: { type: Number, required: true },
   address: { type: String, required: true },
   status: { type: String, required:true, default: "Order Placed" },
   paymentMethod: { type: String, required: true },
